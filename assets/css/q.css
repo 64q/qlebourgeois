@@ -1,0 +1,81 @@
+/** q.css */
+
+@import url(http://fonts.googleapis.com/css?family=Khula);
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url('/assets/img/space.png') no-repeat;
+  font-family: 'Khula', sans-serif;
+  color: #d6d6ec;
+}
+
+header {
+  background: #030423;
+  background: url('/assets/img/header.png');
+}
+
+header .social {
+  float: right;
+  padding: 15px;
+}
+
+header h1 {
+  padding: 15px 10px;
+  margin: 0;
+  font-size: 25px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #d6d6ec;
+  padding: 15px 10px;
+}
+
+header h1 a:hover {
+  background: #03041c;
+}
+
+footer {
+  height: 40px;
+  padding: 0 10px 0 10px;
+}
+
+div.wrapper {
+  min-height: 100%;
+  height: auto !important; 
+  height: 100%;
+  margin: 0 auto -40px;
+}
+
+div#content {
+  padding: 20px;
+}
+
+div#content h1 {
+  margin: 15px 0 5px 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+div#content p {
+  margin: 0;
+  padding: 0;
+}
+
+div#content a {
+  color: #cc9ed6;
+  text-decoration: none;
+}
+
+div#content a:hover {
+  text-decoration: underline;
+}
