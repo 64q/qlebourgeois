@@ -23,8 +23,9 @@ sv_stop(Port) :-
 %% bootstrap
 %
 bootstrap :-
-  print('Launching website on port 5560...'),
-  sv_start(5560).
+  setting(webapp_port, Port),
+  format('Launching website on port ~d ...', [Port]),
+  sv_start(Port).
 
 % initialization phase of the webapp
 :- initialization(bootstrap).
