@@ -14,7 +14,7 @@ home_content -->
     p('Le site a été développé autour du framework http inclus nativement dans SWI-Prolog 6. Celui-ci permet de construire rapidement un site web.'),
     h1('Liens utiles'),
     p([
-      'Pour en apprendre plus, le site officiel est une mine d\u0027information : ',
+      'Pour en apprendre plus, le site officiel est une mine d\u0027informations : ',
       a(href='http://www.swi-prolog.org/', 'http://www.swi-prolog.org/')
     ]),
     p([
