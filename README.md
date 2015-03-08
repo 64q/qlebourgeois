@@ -4,7 +4,7 @@ This is the http://www.qlebourgeois.me website sources written in SWI-Prolog.
 
 ## How to use
 
-* Install SWI-Prolog
+* Install SWI-Prolog >= 6.6
 * Clone repository
 * Enter prolog shell
 * Type `consult(bootstrap).`
