@@ -2,8 +2,11 @@
 % bootstrap
 %
 
+:- use_module(library(http/http_log)).
+
 :- use_module(library(http/thread_httpd)).
 
+:- consult(settings).
 :- consult(views/views).
 :- consult(app/app).
 

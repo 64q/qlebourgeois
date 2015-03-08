@@ -9,7 +9,12 @@
 user:app_header(Title) -->
   html([
     div(class(social),
-      img(src='/assets/img/facebook-32.png')
+      p([
+        a(href='https://www.facebook.com/qlebourgeois', 'Facebook'), ' // ',
+        a(href='https://twitter.com/qlebourgeois', 'Twitter'), ' // ',
+        a(href='https://github.com/64q', 'Github'), ' // ',
+        a(href='https://www.linkedin.com/in/qlebourgeois', 'Linkedin')
+      ])
     ),
     h1(
       a(href='/', Title)
@@ -18,7 +23,11 @@ user:app_header(Title) -->
 
 user:app_footer -->
   html(
-    p('Quentin Lebourgeois – 2015')
+    p([
+      'Quentin Lebourgeois – ', 
+      a(href='mailto:contact@qlebourgeois.me', 'Contact'),
+      ' – 2015'
+    ])
   ).
 
 user:body(q, Body) -->

@@ -2,10 +2,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Khula);
 
-* {
-  margin: 0;
-}
-
 html, body {
   height: 100%;
 }
@@ -25,7 +21,12 @@ header {
 
 header .social {
   float: right;
-  padding: 15px;
+  padding: 20px 15px 20px 15px;
+}
+
+header .social p {
+  padding: 0;
+  margin: 0;
 }
 
 header h1 {
@@ -45,15 +46,23 @@ header h1 a:hover {
 }
 
 footer {
-  height: 40px;
-  padding: 0 10px 0 10px;
+  background: url('/assets/img/footer.png');
+  height: 55px;
+  padding: 0px 10px 0 10px;
+  opacity: 0.8;
+}
+
+footer p {
+  padding: 15px 0 15px 0;
+  margin: 0;
+  height: 25px;
 }
 
 div.wrapper {
   min-height: 100%;
   height: auto !important; 
   height: 100%;
-  margin: 0 auto -40px;
+  margin: 0 auto -55px;
 }
 
 div#content {
@@ -71,11 +80,11 @@ div#content p {
   padding: 0;
 }
 
-div#content a {
+div#content a, footer a, header a {
   color: #cc9ed6;
   text-decoration: none;
 }
 
-div#content a:hover {
+div#content a:hover, footer a:hover, header a:hover {
   text-decoration: underline;
 }

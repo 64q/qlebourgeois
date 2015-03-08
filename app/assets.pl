@@ -1,5 +1,5 @@
 %
-% assets
+% assets - define how to serve static content
 %
 
 :- use_module(library(http/http_dispatch)).
