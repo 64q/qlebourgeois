@@ -1,15 +1,11 @@
-# qlebourgeois.me
+# qlebourgeois webpage
 
-This is the http://www.qlebourgeois.me website sources written in SWI-Prolog.
+Repository of <http://www.qlebourgeois.me> website sources written in SWI-Prolog.
 
 ## How to use
 
 * Install SWI-Prolog >= 6.6
 * Clone repository
-* Enter prolog shell
-* Type `consult(bootstrap).`
-* Go to <http://localhost:5560>
-
-## Credits
-
-This webapp is maintened by Quentin Lebourgeois, feel free to use it.
+* Enter prolog shell with the `swipl` command
+* Type `consult(bootstrap).` (don't forget the dot)
+* Go to <http://localhost:5560> and enjoy
