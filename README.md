@@ -2,7 +2,7 @@
 
 This is the http://www.qlebourgeois.me website sources written in SWI-Prolog.
 
-# How to use
+## How to use
 
 * Install SWI-Prolog
 * Clone repository
@@ -10,6 +10,6 @@ This is the http://www.qlebourgeois.me website sources written in SWI-Prolog.
 * Type `consult(bootstrap).`
 * Go to http://localhost:5560
 
-# Credits
+## Credits
 
 This webapp is maintened by Quentin Lebourgeois, feel free to use it.
