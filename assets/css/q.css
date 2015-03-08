@@ -80,11 +80,11 @@ div#content p {
   padding: 0;
 }
 
-div#content a, footer a, header a {
+div#content a, footer a, div header a {
   color: #cc9ed6;
   text-decoration: none;
 }
 
-div#content a:hover, footer a:hover, header a:hover {
+div#content a:hover, footer a:hover, header div a:hover {
   text-decoration: underline;
 }
