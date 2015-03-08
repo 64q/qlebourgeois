@@ -8,7 +8,7 @@ This is the http://www.qlebourgeois.me website sources written in SWI-Prolog.
 * Clone repository
 * Enter prolog shell
 * Type `consult(bootstrap).`
-* Go to http://localhost:5560
+* Go to <http://localhost:5560>
 
 ## Credits
 
