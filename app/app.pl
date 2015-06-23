@@ -1,5 +1,5 @@
 %
-% app - main inclusion the webapp
+% app - main inclusion of the webapp
 %
 
 :- consult(core).
