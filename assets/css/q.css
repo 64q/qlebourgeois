@@ -1,90 +1,139 @@
 /** q.css */
 
-@import url(http://fonts.googleapis.com/css?family=Khula);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
-html, body {
-  height: 100%;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 body {
+  margin: 0 0 55px;
   padding: 0;
-  margin: 0;
-  background: url('/assets/img/space.png') no-repeat;
-  font-family: 'Khula', sans-serif;
-  color: #d6d6ec;
+
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background: url('/assets/img/space.png');
+
+  line-height: 150%;
 }
 
-header {
-  background: #030423;
-  background: url('/assets/img/header.png');
-}
+/** general settings */
 
-header .social {
-  float: right;
-  padding: 20px 15px 20px 15px;
-}
-
-header .social p {
-  padding: 0;
-  margin: 0;
-}
-
-header h1 {
-  padding: 15px 10px;
-  margin: 0;
-  font-size: 25px;
-}
-
-header h1 a {
+a {
+  color: #E57373;
   text-decoration: none;
-  color: #d6d6ec;
-  padding: 15px 10px;
 }
 
-header h1 a:hover {
-  background: #03041c;
+a:hover {
+  text-decoration: underline;
 }
+
+/** nav */
+
+nav {
+  padding: 20px 0 20px 0;
+
+  background: black;
+  font-size: large;
+}
+
+nav div.nav-wrapper {
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+nav a.brand-logo {
+  padding: 0 10px 0 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px 0 10px;
+}
+
+/** prez-items */
+
+div.prez-items {
+  width: 1337px;
+  margin: 75px auto 75px auto;
+  padding: 0;
+}
+
+div.prez-item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+
+  width: 400px;
+  height: 300px;
+
+  padding: 0 10px 0 10px;
+  margin: 10px 10px 10px 10px;
+
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+div.prez-item h1 {
+  font-size: large;
+  text-align: center;
+}
+
+/** footer */
 
 footer {
-  background: url('/assets/img/footer.png');
-  height: 55px;
-  padding: 0px 10px 0 10px;
-  opacity: 0.8;
-}
-
-footer p {
   padding: 15px 0 15px 0;
-  margin: 0;
-  height: 25px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-div.wrapper {
-  min-height: 100%;
-  height: auto !important; 
-  height: 100%;
-  margin: 0 auto -55px;
+
+/** utils */
+
+.container {
+  padding: 0 10px 0 10px;
 }
 
-div#content {
-  padding: 20px;
+.center {
+  text-align: center;
 }
 
-div#content h1 {
-  margin: 15px 0 5px 0;
-  padding: 0;
-  font-size: 20px;
+.float-right {
+  float: right;
 }
 
-div#content p {
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 1400px) {
+  /** responsive prez items? hell yeah */
+  div.prez-item {
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+  div.prez-items {
+    width: auto;
+  }
 }
 
-div#content a, footer a, div header a {
-  color: #cc9ed6;
-  text-decoration: none;
-}
+@media screen and (max-width: 710px) {
+  nav {
+    text-align: center;
+  }
 
-div#content a:hover, footer a:hover, header div a:hover {
-  text-decoration: underline;
+  nav ul {
+    padding: 10px 0;
+    float: none;
+  }
 }

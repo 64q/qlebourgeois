@@ -10,8 +10,11 @@ app_page(Title, Content) :-
   reply_html_page(q, [
       title([
         BaseTitle, ' ', Title
-      ]), 
-      \favicon('/assets/img/favicon.png'), 
-      \css('/assets/css/q.css')
+      ]),
+      % website custom resources
+      \favicon('/assets/img/favicon.png'),
+      \css('/assets/css/q.css'),
+      % meta for mobile
+      meta([name('viewport'), content('width=device-width, initial-scale=1.0')])
     ], Content
   ).

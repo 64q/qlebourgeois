@@ -8,23 +8,23 @@
 
 user:app_header(Title) -->
   html([
-    div(class(social),
-      p([
-        a(href='https://www.facebook.com/qlebourgeois', 'Facebook'), ' // ',
-        a(href='https://twitter.com/qlebourgeois', 'Twitter'), ' // ',
-        a(href='https://github.com/64q', 'Github'), ' // ',
-        a(href='https://www.linkedin.com/in/qlebourgeois', 'Linkedin')
+    nav([role('navigation')],
+      div(class('nav-wrapper container'), [
+        a([id('logo-container'), class('brand-logo'), href='/'], Title),
+        ul(class('social-links'), [
+          li(a(href='https://www.facebook.com/qlebourgeois', 'Facebook')),
+          li(a(href='https://twitter.com/qlebourgeois', 'Twitter')),
+          li(a(href='https://github.com/64q', 'Github')),
+          li(a(href='https://www.linkedin.com/in/qlebourgeois', 'Linkedin'))
+        ])
       ])
-    ),
-    h1(
-      a(href='/', Title)
     )
   ]).
 
 user:app_footer -->
   html(
-    p([
-      'Quentin Lebourgeois – ', 
+    div(class('container'), [
+      'Quentin Lebourgeois – ',
       a(href='mailto:contact@qlebourgeois.me', 'Contact'),
       ' – 2015'
     ])
@@ -33,15 +33,14 @@ user:app_footer -->
 user:body(q, Body) -->
   html(
     body([
-      div(class(wrapper), [
-        header(
-          \app_header('~/ Quentin Lebourgeois')
-        ),
-        div(id(content), Body)
-      ]),
+      header(
+        \app_header('~/.qlebourgeois')
+      ),
+      div([id(content)], Body),
       footer(
         \app_footer
-      )
+      ),
+      script(src('/assets/js/app.js'), '')
     ])
   ).
 
