@@ -1,3 +1,3 @@
 (function(){
-  console.log('hello you! :o)')
+  console.log('hello you! :o)');
 })();
