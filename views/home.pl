@@ -38,9 +38,7 @@ home_content -->
           h1('Contact'),
           p('Pour toute remarque, demande de devis, étude ou question, veuillez me laisser un message sur mon adresse mail ci-dessous.'),
           p([
-            'Pour me contacter, veuillez m\u0027écrire à <',
-            a(href='mailto:contact@qlebourgeois.me', 'contact@qlebourgeois.me'),
-            '>.'
+            'Pour me contacter, veuillez m\u0027écrire sur GitHub.'
           ])
         ])
       ])
