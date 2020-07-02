@@ -26,7 +26,7 @@ user:app_footer -->
     div(class('container'), [
       'Quentin Lebourgeois – ',
       a(href='mailto:contact@qlebourgeois.me', 'Contact'),
-      ' – 2015'
+      ' – 2020'
     ])
   ).
 
